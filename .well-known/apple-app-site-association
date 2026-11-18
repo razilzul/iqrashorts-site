@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "3SCWPB3582.com.rzeestudios.daily"
+        ],
+        "components": [
+          {
+            "/": "/a/*",
+            "comment": "card pages open the card in the app"
+          }
+        ]
+      }
+    ]
+  }
+}
