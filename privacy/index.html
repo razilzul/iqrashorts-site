@@ -23,20 +23,22 @@ header{display:flex;align-items:center;gap:10px}header img{width:32px;height:32p
 <p>IqraShorts is a free app with short cards of Quran, hadith and doa. It has no account, no ads and no tracking.</p>
 
 <h2>What stays on your phone</h2>
-<p>Everything personal stays on your phone and is never sent to us: the cards you save, your reactions, the topics you mute, your language, how long each card stayed on screen, and the feed preferences the app learns from that. It is excluded from Android's cloud backup and device-to-device transfer, and on iPhone it is kept out of iCloud backup, so it is not copied off the phone. Deleting the app deletes all of it. You can also reset it in Settings.</p>
+<p>Everything personal stays on your phone and is never sent to us: the cards you save, your likes, the topics you mute, your language, how long each card stayed on screen, and the feed preferences the app learns from that. It is excluded from Android's cloud backup and device-to-device transfer, and on iPhone it is kept out of iCloud backup, so it is not copied off the phone. Deleting the app deletes all of it. You can also reset it in Settings.</p>
 
 <h2>What the app asks the internet for</h2>
 <ul>
-<li><strong>Translations of the Quran.</strong> The app asks Quran Foundation's service (api.quran.com) for the translation of an ayah when that card is being prepared, which can be just before it reaches the screen. The request contains only the verse number and the chosen translation. Like any website, the service sees your device's internet address; we do not receive it. Each translation is kept on your phone for at most 6 days and is deleted when the app next reads it, starts, or returns to the screen after that.</li>
+<li><strong>Translations of the Quran.</strong> When a card with an ayah is being prepared (which can be just before it reaches the screen), the app asks our small server for that ayah's translation. Our server passes the request on to Quran Foundation's service and stores nothing. The request contains only the verse number and the chosen translation. Our hosting provider (Supabase) and Quran Foundation see your device's internet address, as any website does, and may keep it in short-lived technical logs; we don't keep it or use it. Each translation is kept on your phone for at most 6 days and is deleted when the app next reads it, starts, or returns to the screen after that.</li>
+<li><strong>A short list of cards under review.</strong> When the app starts, it downloads a list of cards that have been reported and are shown less or hidden while we check them. The request carries nothing about you.</li>
+<li><strong>Reports, only if you send one.</strong> If you tap "Report a problem" on a card, the app sends exactly three things: which card, the reason you picked from a fixed list, and a random install number the app made on your phone. The install number isn't linked to your name, email, account or location; it only lets us limit repeat reports. Our server also records when the report arrived. Reports are deleted after one year. They are stored in our own section of a database we run for our other app, HalalSnap, kept separate from that app's data.</li>
 <li><strong>Links you tap.</strong> "Read free at…" and other links open in your browser, which then talks to that website directly.</li>
-<li>Nothing else is sent. If we add a feature that sends something (for example a button to report a card), we will update this page before that version is released.</li>
+<li><strong>Nothing else is sent.</strong> If we add a feature that sends something more, we will update this page before that version is released.</li>
 </ul>
 
 <h2>Sharing</h2>
 <p>When you share a card, the app makes an image on your phone and hands it to the app you pick. We never see what you share or with whom.</p>
 
 <h2>Children</h2>
-<p>The app collects nothing from anyone, including children.</p>
+<p>The app has no accounts and collects nothing about who you are, from anyone, including children. The only thing it can send is a report you choose to send, as described above.</p>
 
 <h2>Contact</h2>
 <p>Questions or a request: <a href="mailto:privacy@iqrashorts.app">privacy@iqrashorts.app</a>.</p>
