@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy · IqraShorts</title>
-<meta name="description" content="IqraShorts privacy policy: no account, no ads, no tracking. What stays on your phone and what the app asks the internet for.">
+<meta name="description" content="IqraShorts privacy policy: no account, no ads, no tracking across other apps. What stays on your phone, the anonymous usage stats, and what the app asks the internet for.">
 <meta name="theme-color" content="#102938">
 <link rel="icon" href="/favicon.png">
 <style>
@@ -18,12 +18,16 @@ header{display:flex;align-items:center;gap:10px}header img{width:32px;height:32p
 <main>
 <header><img src="/icon-256.png" alt=""><a href="/">IqraShorts</a></header>
 <h1>Privacy</h1>
-<p class="meta">IqraShorts by Rzee Studios, Singapore · Last updated 19 November 2026 (before release)</p>
+<p class="meta">IqraShorts by Rzee Studios, Singapore · Last updated 22 November 2026</p>
 
-<p>IqraShorts is a free app with short cards of Quran, hadith and doa. It has no account, no ads and no tracking.</p>
+<p>IqraShorts is a free app with short cards of Quran, hadith and doa. It has no account and no ads, and it never tracks you across other companies' apps or websites.</p>
 
 <h2>What stays on your phone</h2>
-<p>Everything personal stays on your phone and is never sent to us: the cards you save, your likes, the topics you mute, your language, how long each card stayed on screen, and the feed preferences the app learns from that. It is excluded from Android's cloud backup and device-to-device transfer, and on iPhone it is kept out of iCloud backup, so it is not copied off the phone. Deleting the app deletes all of it. You can also reset it in Settings.</p>
+<p>Your location, the prayer zone you pick, the topics you mute, your language, your list of saved cards and the feed preferences the app learns stay on your phone and are never sent to us (the anonymous usage stats below are the one exception, and you can turn them off). It is excluded from Android's cloud backup and device-to-device transfer, and on iPhone it is kept out of iCloud backup, so it is not copied off the phone. Deleting the app deletes all of it. You can also reset it in Settings.</p>
+
+<h2>Anonymous usage stats</h2>
+<p>To see which cards help people and how hard each quiz is, the app sends us what happens to each card: that it was shown and for how long, and whether you liked, saved or shared it, tapped "Less like this", or which answer you picked in a quiz and whether it was right. Each of these carries the card, the background scene and layout it was shown with, the time on your phone, and the same random install number the app uses for reports. It never carries your name, email, account, location, contacts, advertising ID or anything that identifies your device beyond that random number.</p>
+<p>The stats are on by default. To stop them, open Settings and turn off "Anonymous usage stats": nothing more is sent, and stats still waiting on the phone are deleted. We use them only to improve the cards and to show, on each quiz, how many people get it right (from everyone's first answers, once a quiz has at least 20). We don't sell them, share them or use them for ads. They are stored in the same separate section of our database as reports and deleted after one year.</p>
 
 <h2>What the app asks the internet for</h2>
 <ul>
@@ -33,7 +37,8 @@ header{display:flex;align-items:center;gap:10px}header img{width:32px;height:32p
 <li><strong>Links you tap.</strong> "Read free at…" and other links open in your browser, which then talks to that website directly.</li>
 <li><strong>Official prayer timetables.</strong> If you set up prayer times in Singapore or Malaysia, the app downloads the official timetable from MUIS (data.gov.sg) or JAKIM e-Solat. That tells them which of the two countries' timetables you need. For Malaysia the app downloads every zone, so your zone and your GPS position are never sent. Prayer times are worked out on your phone.</li>
 <li><strong>App updates.</strong> When the app starts, it asks our update service (Expo EAS Update) whether a newer version of the app's code and content is ready, and downloads it if so. The request carries the app version, the platform, which update you're on and a random number that the update system makes for this install. If the app failed to start last time, it also sends the error message and which update failed, so a broken update can be stopped. Expo keeps its own service logs.</li>
-<li><strong>Your internet address.</strong> Like any website, each service the app talks to sees your device's internet address: our hosting provider (Supabase) for translations, the review list and reports; Expo for update checks; and MUIS (data.gov.sg) or JAKIM for prayer timetables. Supabase's logs keep, for a short time, the address, a rough country worked out from it and what was asked for (for example which verse's translation). We don't store the address with reports and don't use it to identify you.</li>
+<li><strong>Your internet address.</strong> Like any website, each service the app talks to sees your device's internet address: our hosting provider (Supabase) for translations, the review list, quiz numbers, usage stats and reports; Expo for update checks; and MUIS (data.gov.sg) or JAKIM for prayer timetables. Supabase's logs keep, for a short time, the address, a rough country worked out from it and what was asked for (for example which verse's translation). We don't store the address with reports or stats and don't use it to identify you.</li>
+<li><strong>How hard each quiz is.</strong> When a quiz is shown, the app downloads, at most once per run, the share of people who got each quiz right. The request carries nothing about you, so it works with the stats turned off too.</li>
 <li><strong>Nothing else is sent.</strong> If we add a feature that sends something more, we will update this page before that version is released.</li>
 </ul>
 
@@ -43,9 +48,10 @@ header{display:flex;align-items:center;gap:10px}header img{width:32px;height:32p
 <h2 id="delete">Deleting your data</h2>
 <p><strong>On your phone:</strong> in the app, open Settings and tap "Reset my feed and saves", or delete the app. That removes everything the app keeps on the phone.</p>
 <p><strong>Reports you sent:</strong> they are deleted automatically one year after they arrive. To have them deleted sooner, email <a href="mailto:privacy@iqrashorts.app?subject=Delete%20my%20reports">privacy@iqrashorts.app</a> with the card(s) and the date you reported them. We delete the matching reports within 30 days. Reports aren't linked to your name or email, so we can't look them up any other way.</p>
+<p><strong>Usage stats:</strong> they are deleted automatically one year after they arrive. To have yours deleted sooner, open Settings in the app, note the first 8 characters of your number shown under "Anonymous usage stats", and email them to <a href="mailto:privacy@iqrashorts.app?subject=Delete%20my%20usage%20stats">privacy@iqrashorts.app</a>. We delete every stat (and report) from that number within 30 days. Turning the switch off stops new ones.</p>
 <p><strong>Server logs</strong> (internet address, rough country, what was asked for) are short-lived and deleted on our hosting provider's normal schedule.</p>
 <h2>Children</h2>
-<p>The app has no accounts and collects nothing about who you are, from anyone, including children. Apart from what is listed above (requests for translations, the review list, timetables and update checks, and reports you choose to send), nothing is sent.</p>
+<p>The app has no accounts and collects nothing about who you are, from anyone, including children. Apart from what is listed above (the anonymous usage stats, which can be turned off, requests for translations, quiz numbers, the review list, timetables and update checks, and reports you choose to send), nothing is sent.</p>
 
 <h2>Contact</h2>
 <p>Questions or a request: <a href="mailto:privacy@iqrashorts.app">privacy@iqrashorts.app</a>.</p>
